@@ -1,40 +1,40 @@
-name: Python App CI/CD Pipeline with Direct Deployment
+this is my code: name: Python App CI/CD Pipeline with Direct Deployment
 
 on:
   push:
     branches:
-      - main  # Trigger on push to the main branch
+      - main
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-    # Step 1: Checkout the repository code
+    # Checkout the repository
     - name: Checkout code
       uses: actions/checkout@v4
 
-    # Step 2: Set up Python environment
+    # Set up Python environment
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
         python-version: '3.9'
-        cache: 'pip' # Caching pip dependencies
+        cache: 'pip' # caching pip dependencies
     - run: |
         pip install -r requirements.txt
 
-    # Step 3: Run tests (Optional, can be customized based on your needs)
+    # Run tests (Placeholder for actual tests)
     - name: Run tests
       run: |
         echo "Run tests"
 
-    # Step 4: Azure Login using GitHub Secrets
+    # Azure Login using GitHub Secrets
     - name: Azure Login
       uses: azure/login@v2.2.0
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-    # Step 5: Execute Update Script on the Azure VM
+    # Execute the Update Script on the VM
     - name: Deploy to Azure VM
       run: |
         az vm extension set \
@@ -43,4 +43,4 @@ jobs:
           --name CustomScript \
           --force-update \
           --publisher Microsoft.Azure.Extensions \
-          --settings '{"script": "/home/azureuser/SDA/update_app.sh"}'
+          --settings '{"commandToExecute": "/home/azureuser/SDA/update_app.sh"}'
