@@ -43,4 +43,4 @@ jobs:
           --name CustomScript \
           --force-update \
           --publisher Microsoft.Azure.Extensions \
-          --settings '{"script": "/home/azureuser/SDA/update_app.sh"}'
+          --settings '{"commandToExecute": "/home/azureuser/SDA/update_app.sh"}'
