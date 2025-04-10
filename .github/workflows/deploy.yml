@@ -37,12 +37,11 @@ jobs:
     # Step 5: Execute Update Script on the Azure VM
     - name: Deploy to Azure VM
       run: |
-        # Set the script to executable to avoid permission issues
+        # Specify only the script parameter to avoid conflict
         az vm extension set \
           --resource-group ${{ secrets.RESOURCE_GROUP }} \
           --vm-name ${{ secrets.VM_NAME }} \
           --name CustomScript \
           --force-update \
           --publisher Microsoft.Azure.Extensions \
-          --settings '{"script": "/home/azureuser/SDA/update_app.sh"}' \
-         
+          --settings '{"script": "/home/azureuser/SDA/update_app.sh"}'
