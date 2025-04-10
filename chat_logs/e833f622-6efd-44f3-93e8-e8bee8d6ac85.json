@@ -1,0 +1,10 @@
+[
+    {
+        "role": "user",
+        "content": "waht is the pdf about?"
+    },
+    {
+        "role": "assistant",
+        "content": "I don't have enough information to determine what the PDF is about based on the provided context."
+    }
+]
