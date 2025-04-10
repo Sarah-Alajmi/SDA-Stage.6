@@ -37,7 +37,6 @@ jobs:
     # Step 5: Execute Update Script on the Azure VM
     - name: Deploy to Azure VM
       run: |
-        # Specify only the script parameter to avoid conflict
         az vm extension set \
           --resource-group ${{ secrets.RESOURCE_GROUP }} \
           --vm-name ${{ secrets.VM_NAME }} \
