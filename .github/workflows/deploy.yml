@@ -45,4 +45,4 @@ jobs:
           --force-update \
           --publisher Microsoft.Azure.Extensions \
           --settings '{"script": "/home/azureuser/SDA/update_app.sh"}' \
-          --protected-settings '{"commandToExecute": "/bin/bash /home/azureuser/SDA/update_app.sh"}'
+         
