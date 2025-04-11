@@ -129,3 +129,180 @@ DEBUG:    [10-04-2025 16:59:11] Collection langchain already exists, returning e
 INFO:     [10-04-2025 16:59:11] 127.0.0.1:47488 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
 DEBUG:    [10-04-2025 16:59:11] Collection langchain already exists, returning existing collection.
 INFO:     [10-04-2025 16:59:11] 127.0.0.1:47488 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+[1m
+
+                [38;5;069m(((((((((    [38;5;203m((((([38;5;220m####
+             [38;5;069m((((((((((((([38;5;203m((((((((([38;5;220m#########
+           [38;5;069m((((((((((((([38;5;203m((((((((((([38;5;220m###########
+         [38;5;069m(((((((((((((([38;5;203m(((((((((((([38;5;220m############
+        [38;5;069m((((((((((((([38;5;203m(((((((((((((([38;5;220m#############
+        [38;5;069m((((((((((((([38;5;203m(((((((((((((([38;5;220m#############
+         [38;5;069m(((((((((((([38;5;203m((((((((((((([38;5;220m##############
+         [38;5;069m(((((((((((([38;5;203m(((((((((((([38;5;220m##############
+           [38;5;069m(((((((((([38;5;203m((((((((((([38;5;220m#############
+             [38;5;069m(((((((([38;5;203m(((((((([38;5;220m##############
+                [38;5;069m((((([38;5;203m((((    [38;5;220m#########[0m
+
+    
+[1m
+Running Chroma
+[0m
+Saving data to: db
+Connect to chroma at: http://0.0.0.0:8000
+Getting started guide: https://docs.trychroma.com/getting-started
+
+
+INFO:     [10-04-2025 19:46:31] Set chroma_server_nofile to 65535
+INFO:     [10-04-2025 19:46:31] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+DEBUG:    [10-04-2025 19:46:31] Starting component System
+DEBUG:    [10-04-2025 19:46:31] Starting component OpenTelemetryClient
+DEBUG:    [10-04-2025 19:46:31] Starting component SqliteDB
+DEBUG:    [10-04-2025 19:46:31] Starting component SimpleQuotaEnforcer
+DEBUG:    [10-04-2025 19:46:31] Starting component Posthog
+DEBUG:    [10-04-2025 19:46:31] Starting component SimpleRateLimitEnforcer
+DEBUG:    [10-04-2025 19:46:31] Starting component LocalSegmentManager
+DEBUG:    [10-04-2025 19:46:31] Starting component LocalExecutor
+DEBUG:    [10-04-2025 19:46:31] Starting component SegmentAPI
+INFO:     [10-04-2025 19:46:31] Started server process [22139]
+INFO:     [10-04-2025 19:46:31] Waiting for application startup.
+INFO:     [10-04-2025 19:46:31] Application startup complete.
+INFO:     [10-04-2025 19:46:31] Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     [10-04-2025 19:46:32] 127.0.0.1:47428 - "GET /api/v2/auth/identity HTTP/1.1" 200
+INFO:     [10-04-2025 19:46:32] 127.0.0.1:47436 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+INFO:     [10-04-2025 19:46:32] 127.0.0.1:47436 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+DEBUG:    [10-04-2025 19:46:32] Collection langchain already exists, returning existing collection.
+INFO:     [10-04-2025 19:46:32] 127.0.0.1:47428 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+DEBUG:    [10-04-2025 19:46:32] Collection langchain already exists, returning existing collection.
+INFO:     [10-04-2025 19:46:32] 127.0.0.1:47428 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+INFO:     [10-04-2025 20:35:16] 127.0.0.1:50564 - "GET /api/v2/auth/identity HTTP/1.1" 200
+INFO:     [10-04-2025 20:35:16] 127.0.0.1:50566 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+INFO:     [10-04-2025 20:35:16] 127.0.0.1:50566 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+DEBUG:    [10-04-2025 20:35:16] Collection langchain already exists, returning existing collection.
+INFO:     [10-04-2025 20:35:16] 127.0.0.1:50564 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+DEBUG:    [10-04-2025 20:35:16] Collection langchain already exists, returning existing collection.
+INFO:     [10-04-2025 20:35:16] 127.0.0.1:50564 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+INFO:     [10-04-2025 20:35:31] Backing off send_request(...) for 0.7s (requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='us.i.posthog.com', port=443): Read timed out. (read timeout=15))
+INFO:     [10-04-2025 22:08:44] Shutting down
+INFO:     [10-04-2025 22:08:44] Waiting for application shutdown.
+DEBUG:    [10-04-2025 22:08:44] Stopping component System
+DEBUG:    [10-04-2025 22:08:44] Stopping component SegmentAPI
+DEBUG:    [10-04-2025 22:08:44] Stopping component LocalExecutor
+DEBUG:    [10-04-2025 22:08:44] Stopping component LocalSegmentManager
+DEBUG:    [10-04-2025 22:08:44] Stopping component SimpleRateLimitEnforcer
+DEBUG:    [10-04-2025 22:08:44] Stopping component Posthog
+DEBUG:    [10-04-2025 22:08:44] Stopping component SimpleQuotaEnforcer
+DEBUG:    [10-04-2025 22:08:44] Stopping component SqliteDB
+DEBUG:    [10-04-2025 22:08:44] Stopping component OpenTelemetryClient
+INFO:     [10-04-2025 22:08:44] Application shutdown complete.
+INFO:     [10-04-2025 22:08:44] Finished server process [22139]
+[1m
+
+                [38;5;069m(((((((((    [38;5;203m((((([38;5;220m####
+             [38;5;069m((((((((((((([38;5;203m((((((((([38;5;220m#########
+           [38;5;069m((((((((((((([38;5;203m((((((((((([38;5;220m###########
+         [38;5;069m(((((((((((((([38;5;203m(((((((((((([38;5;220m############
+        [38;5;069m((((((((((((([38;5;203m(((((((((((((([38;5;220m#############
+        [38;5;069m((((((((((((([38;5;203m(((((((((((((([38;5;220m#############
+         [38;5;069m(((((((((((([38;5;203m((((((((((((([38;5;220m##############
+         [38;5;069m(((((((((((([38;5;203m(((((((((((([38;5;220m##############
+           [38;5;069m(((((((((([38;5;203m((((((((((([38;5;220m#############
+             [38;5;069m(((((((([38;5;203m(((((((([38;5;220m##############
+                [38;5;069m((((([38;5;203m((((    [38;5;220m#########[0m
+
+    
+[1m
+Running Chroma
+[0m
+Saving data to: db
+Connect to chroma at: http://0.0.0.0:8000
+Getting started guide: https://docs.trychroma.com/getting-started
+
+
+INFO:     [10-04-2025 22:08:47] Set chroma_server_nofile to 65535
+INFO:     [10-04-2025 22:08:47] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+DEBUG:    [10-04-2025 22:08:47] Starting component System
+DEBUG:    [10-04-2025 22:08:47] Starting component OpenTelemetryClient
+DEBUG:    [10-04-2025 22:08:47] Starting component SqliteDB
+DEBUG:    [10-04-2025 22:08:47] Starting component SimpleQuotaEnforcer
+DEBUG:    [10-04-2025 22:08:47] Starting component Posthog
+DEBUG:    [10-04-2025 22:08:47] Starting component SimpleRateLimitEnforcer
+DEBUG:    [10-04-2025 22:08:47] Starting component LocalSegmentManager
+DEBUG:    [10-04-2025 22:08:47] Starting component LocalExecutor
+DEBUG:    [10-04-2025 22:08:47] Starting component SegmentAPI
+INFO:     [10-04-2025 22:08:47] Started server process [28843]
+INFO:     [10-04-2025 22:08:47] Waiting for application startup.
+INFO:     [10-04-2025 22:08:47] Application startup complete.
+INFO:     [10-04-2025 22:08:47] Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     [10-04-2025 22:08:48] 127.0.0.1:39126 - "GET /api/v2/auth/identity HTTP/1.1" 200
+INFO:     [10-04-2025 22:08:48] 127.0.0.1:39132 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+INFO:     [10-04-2025 22:08:48] 127.0.0.1:39132 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+DEBUG:    [10-04-2025 22:08:48] Collection langchain already exists, returning existing collection.
+INFO:     [10-04-2025 22:08:48] 127.0.0.1:39126 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+DEBUG:    [10-04-2025 22:08:48] Collection langchain already exists, returning existing collection.
+INFO:     [10-04-2025 22:08:48] 127.0.0.1:39126 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+INFO:     [10-04-2025 22:16:51] Shutting down
+INFO:     [10-04-2025 22:16:52] Waiting for application shutdown.
+DEBUG:    [10-04-2025 22:16:52] Stopping component System
+DEBUG:    [10-04-2025 22:16:52] Stopping component SegmentAPI
+DEBUG:    [10-04-2025 22:16:52] Stopping component LocalExecutor
+DEBUG:    [10-04-2025 22:16:52] Stopping component LocalSegmentManager
+DEBUG:    [10-04-2025 22:16:52] Stopping component SimpleRateLimitEnforcer
+DEBUG:    [10-04-2025 22:16:52] Stopping component Posthog
+DEBUG:    [10-04-2025 22:16:52] Stopping component SimpleQuotaEnforcer
+DEBUG:    [10-04-2025 22:16:52] Stopping component SqliteDB
+DEBUG:    [10-04-2025 22:16:52] Stopping component OpenTelemetryClient
+INFO:     [10-04-2025 22:16:52] Application shutdown complete.
+INFO:     [10-04-2025 22:16:52] Finished server process [28843]
+[1m
+
+                [38;5;069m(((((((((    [38;5;203m((((([38;5;220m####
+             [38;5;069m((((((((((((([38;5;203m((((((((([38;5;220m#########
+           [38;5;069m((((((((((((([38;5;203m((((((((((([38;5;220m###########
+         [38;5;069m(((((((((((((([38;5;203m(((((((((((([38;5;220m############
+        [38;5;069m((((((((((((([38;5;203m(((((((((((((([38;5;220m#############
+        [38;5;069m((((((((((((([38;5;203m(((((((((((((([38;5;220m#############
+         [38;5;069m(((((((((((([38;5;203m((((((((((((([38;5;220m##############
+         [38;5;069m(((((((((((([38;5;203m(((((((((((([38;5;220m##############
+           [38;5;069m(((((((((([38;5;203m((((((((((([38;5;220m#############
+             [38;5;069m(((((((([38;5;203m(((((((([38;5;220m##############
+                [38;5;069m((((([38;5;203m((((    [38;5;220m#########[0m
+
+    
+[1m
+Running Chroma
+[0m
+Saving data to: db
+Connect to chroma at: http://0.0.0.0:8000
+Getting started guide: https://docs.trychroma.com/getting-started
+
+
+INFO:     [11-04-2025 11:28:10] Set chroma_server_nofile to 65535
+INFO:     [11-04-2025 11:28:11] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+DEBUG:    [11-04-2025 11:28:11] Starting component System
+DEBUG:    [11-04-2025 11:28:11] Starting component OpenTelemetryClient
+DEBUG:    [11-04-2025 11:28:11] Starting component SqliteDB
+DEBUG:    [11-04-2025 11:28:11] Starting component SimpleQuotaEnforcer
+DEBUG:    [11-04-2025 11:28:11] Starting component Posthog
+DEBUG:    [11-04-2025 11:28:11] Starting component SimpleRateLimitEnforcer
+DEBUG:    [11-04-2025 11:28:11] Starting component LocalSegmentManager
+DEBUG:    [11-04-2025 11:28:11] Starting component LocalExecutor
+DEBUG:    [11-04-2025 11:28:11] Starting component SegmentAPI
+INFO:     [11-04-2025 11:28:11] Started server process [1186]
+INFO:     [11-04-2025 11:28:11] Waiting for application startup.
+INFO:     [11-04-2025 11:28:11] Application startup complete.
+INFO:     [11-04-2025 11:28:11] Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     [11-04-2025 11:28:13] 127.0.0.1:37630 - "GET /api/v2/auth/identity HTTP/1.1" 200
+INFO:     [11-04-2025 11:28:13] 127.0.0.1:37632 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+INFO:     [11-04-2025 11:28:13] 127.0.0.1:37632 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+DEBUG:    [11-04-2025 11:28:13] Collection langchain already exists, returning existing collection.
+INFO:     [11-04-2025 11:28:13] 127.0.0.1:37630 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+DEBUG:    [11-04-2025 11:28:13] Collection langchain already exists, returning existing collection.
+INFO:     [11-04-2025 11:28:13] 127.0.0.1:37630 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+INFO:     [11-04-2025 11:41:09] 127.0.0.1:58312 - "GET /api/v2/auth/identity HTTP/1.1" 200
+INFO:     [11-04-2025 11:41:09] 127.0.0.1:58328 - "GET /api/v2/tenants/default_tenant HTTP/1.1" 200
+INFO:     [11-04-2025 11:41:09] 127.0.0.1:58328 - "GET /api/v2/tenants/default_tenant/databases/default_database HTTP/1.1" 200
+DEBUG:    [11-04-2025 11:41:09] Collection langchain already exists, returning existing collection.
+INFO:     [11-04-2025 11:41:09] 127.0.0.1:58312 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+DEBUG:    [11-04-2025 11:41:09] Collection langchain already exists, returning existing collection.
+INFO:     [11-04-2025 11:41:09] 127.0.0.1:58312 - "POST /api/v2/tenants/default_tenant/databases/default_database/collections HTTP/1.1" 200
+INFO:     [11-04-2025 11:41:24] Backing off send_request(...) for 0.1s (requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='us.i.posthog.com', port=443): Read timed out. (read timeout=15))
