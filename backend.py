@@ -55,9 +55,7 @@ storage_resource_uri = storage_account_sas_url.split('?')[0]
 token = storage_account_sas_url.split('?')[1]
 
 app = FastAPI()
-@app.get("/healthz")
-def health_check():
-    return {"status": "ok"}
+
 # Request models
 class ChatRequest(BaseModel):
     messages: List[dict]
@@ -335,10 +333,4 @@ async def rag_chat(request: RAGChatRequest):
     # Use StreamingResponse to return
     return StreamingResponse(stream_response(), media_type="text/plain")
 
-from fastapi import FastAPI
 
-app = FastAPI()
-
-@app.get("/")
-def read_root():
-    return {"message": "Hello, World!"}
